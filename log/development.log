@@ -586,3 +586,12 @@ Processing by SchoolClassesController#show as HTML
 Completed 200 OK in 215ms (Views: 208.2ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/school_classes/1" for 69.138.120.79 at 2019-09-17 17:57:55 +0000
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSchoolClass Load (0.1ms)[0m  [1m[34mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering school_classes/show.html.erb within layouts/application
+  Rendered school_classes/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 36ms (Views: 34.5ms | ActiveRecord: 0.1ms)
+
+
