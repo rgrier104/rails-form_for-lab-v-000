@@ -624,3 +624,14 @@ Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.1ms)
 
 Started GET "/school_classes/new" for 69.138.120.79 at 2019-09-17 18:00:29 +0000
 Processing by SchoolClassesController#new as HTML
+  Rendering school_classes/new.html.erb within layouts/application
+  Rendered school_classes/new.html.erb within layouts/application (28.4ms)
+Completed 200 OK in 85ms (Views: 72.4ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/school_classes" for 69.138.120.79 at 2019-09-17 18:00:33 +0000
+Processing by SchoolClassesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A8Ta7qzu/gop2APaITfBEBb9L9wDXxEu4+pjpbt9HRJxjFjSqAPfd4SAnJAGZ94X5u+YiXsdGktaRA7BGn2oyQ==", "school_class"=>{"title"=>"New Class", "room_number"=>"2"}, "commit"=>"Create School class"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "school_classes" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2019-09-17 18:00:33.603135"], ["updated_at", "2019-09-17 18:00:33.603135"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
