@@ -10,10 +10,10 @@ class SchoolClassesController < ApplicationController
   end
 
   def create
-    @student = Student.new
-    @student.first_name = params[:first_name]
-    @student.last_name = params[:last_name]
-    @student.save
-    redirect_to student_path(@student)
+    @school_classes = SchoolClass.new
+    @school_classes.first_name = params[:first_name]
+    @school_classes.last_name = params[:last_name]
+    @school_classes.save
+    redirect_to student_path(@school_class)
   end
 end
