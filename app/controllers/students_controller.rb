@@ -21,7 +21,7 @@ class StudentsController < ApplicationController
   def update
     @student = Student.find(params[:id])
     @student.update(student_params(:first_name, :last_name))
-    redirect_to school_class_path(@school_class)
+    redirect_to student_path(@studetn)
   end
 
   def edit
