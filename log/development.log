@@ -232,3 +232,25 @@ app/controllers/school_classes_controller.rb:17:in `create'
   Rendering /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
   Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (42.7ms)
+Started GET "/school_classes/new" for 69.138.120.79 at 2019-09-17 17:12:09 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SchoolClassesController#new as HTML
+  Rendering school_classes/new.html.erb within layouts/application
+  Rendered school_classes/new.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 265ms (Views: 235.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/school_classes" for 69.138.120.79 at 2019-09-17 17:12:15 +0000
+Processing by SchoolClassesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9qzCwGNfgwr2aG80iFg40GvG0DdsBT0ksSC0vpGk8m6E5ED8Z7Kid1sw8H6vCCfXm9RnYhRHNkEIjtnaMKRHtQ==", "school_class"=>{"title"=>"New Class", "room_number"=>"1"}, "commit"=>"Create School class"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "school_classes" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2019-09-17 17:12:15.260648"], ["updated_at", "2019-09-17 17:12:15.260648"]]
+  [1m[35m (10.2ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 10.8ms)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fb699daa410>
+Did you mean?  try):
+  
+app/controllers/school_classes_controller.rb:17:in `create'
