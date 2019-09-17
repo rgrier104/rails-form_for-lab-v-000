@@ -668,3 +668,12 @@ Redirected to http://165.227.81.218:53409/school_classes/3
 Completed 302 Found in 28ms (ActiveRecord: 23.8ms)
 
 
+Started GET "/school_classes/3" for 69.138.120.79 at 2019-09-17 18:15:07 +0000
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSchoolClass Load (0.3ms)[0m  [1m[34mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering school_classes/show.html.erb within layouts/application
+  Rendered school_classes/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 38ms (Views: 31.3ms | ActiveRecord: 0.3ms)
+
+
