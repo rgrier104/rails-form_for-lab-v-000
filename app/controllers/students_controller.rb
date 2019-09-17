@@ -5,4 +5,8 @@ class StudentsController < ApplicationController
 
   def show
   end
+
+  def new
+    @student = Student.new
+  end
 end
