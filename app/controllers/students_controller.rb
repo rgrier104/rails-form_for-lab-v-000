@@ -8,7 +8,7 @@ class StudentsController < ApplicationController
   end
 
   def new
-    @student = Student.new
+    @student = Student.new(student_params(:first_name, :last_name))
   end
 
   def create
