@@ -25,7 +25,7 @@ class SchoolClassesController < ApplicationController
   end
 
   def edit
-    @post = Post.find(params[:id])
+    @school_class = SchoolClass.find(params[:id])
   end
 
   private
