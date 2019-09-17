@@ -6,14 +6,14 @@ class SchoolClassesController < ApplicationController
   end
 
   def new
-    @school_classes = SchoolClass.new
+    @school_class = SchoolClass.new
   end
 
   def create
-    @school_classes = SchoolClass.new
-    @school_classes.title = params[:title]
-    @school_classes.room_number = params[:room_number]
-    @school_classes.save
+    @school_class = SchoolClass.new
+    @school_class.title = params[:title]
+    @school_class.room_number = params[:room_number]
+    @school_class.save
     binding.pry
     redirect_to school_class_path(@school_class)
   end
